@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="FAR — Desarrollo de software a la medida: sistemas, páginas web, aplicaciones y automatización.">
+<meta name="theme-color" content="#ffffff">
+<title>Home \ Far</title>
+<link rel="icon" href="img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="#inicio" class="logo">FAR</a>
+      <ul id="menu">
+        <li><a href="#empresa">Empresa</a></li>
+        <li class="dd" data-href="html/servicios.html">
+          <button type="button" aria-haspopup="true">Servicios <i class="caret"></i></button>
+          <div class="panel"><div class="box" id="navServicios"></div></div>
+        </li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li>
+          <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn sm nav-wa">
+            <svg class="ico fill" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- INICIO -->
+  <section class="hero" id="inicio">
+    <div class="grid-bg" id="gridbg"></div>
+    <div class="wrap">
+      <div class="hero-in">
+        <div>
+          <h1 class="rv">Creamos el software que tu negocio necesita.</h1>
+          <p class="lead rv" style="--d:.1s">Somos FAR. Hacemos páginas web, sistemas y aplicaciones a tu medida, y te acompañamos desde la primera conversación hasta que todo funcione como esperabas.</p>
+          <div class="actions rv" style="--d:.2s">
+            <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn">Hablemos por WhatsApp</a>
+            <a href="#servicios" class="btn line">Ver lo que hacemos</a>
+          </div>
+        </div>
+
+        <!-- Mockup ilustrativo -->
+        <div class="stage rs" style="--d:.2s">
+          <div class="win">
+            <div class="bar"><i></i><i></i><i></i><span>tunegocio.com/panel</span></div>
+            <div class="dash">
+              <aside><b></b><b></b><b></b><b></b></aside>
+              <div class="main">
+                <div class="kpis">
+                  <div><small>Pedidos hoy</small><strong>24</strong></div>
+                  <div><small>Por cobrar</small><strong>12</strong></div>
+                  <div><small>En producción</small><strong>8</strong></div>
+                </div>
+                <div class="chart">
+                  <span style="--h:38%;--i:0"></span><span style="--h:55%;--i:1"></span><span style="--h:45%;--i:2"></span><span style="--h:70%;--i:3"></span><span style="--h:92%;--i:4"></span><span style="--h:62%;--i:5"></span><span style="--h:78%;--i:6"></span>
+                </div>
+                <div class="rows"><div></div><div></div><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="chip c1"><span class="dot"></span><span>Nuevo pedido<small>#1042 · hace un momento</small></span></div>
+          <div class="chip c2"><span class="dot"></span><span>Mensaje enviado<small>Tu pedido ya está listo</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRANJA -->
+  <section class="stats-sec">
+    <div class="wrap">
+      <div class="stats" data-stagger>
+        <div class="rv"><strong>A tu medida</strong><span>Nada de plantillas</span></div>
+        <div class="rv"><strong>Trato directo</strong><span>Hablas con quien programa</span></div>
+        <div class="rv"><strong>Paso a paso</strong><span>Ves los avances mientras se construye</span></div>
+        <div class="rv"><strong>Contigo después</strong><span>Soporte cuando lo necesites</span></div>
+      </div>
+    </div>
+  </section>
+
+<!-- QUIÉNES SOMOS (se abre al llegar y se cierra al volver) -->
+<section class="expand" data-expand id="empresa">
+  <div class="in">
+    <div class="about">
+      <div>
+        <span class="label rv">Quiénes somos</span>
+        <h2 class="rv">Somos FAR, una empresa dominicana de software.</h2>
+        <p class="rv">Hacemos páginas web, sistemas y aplicaciones para negocios que quieren organizarse mejor y crecer. Si hoy llevas tu negocio en cuadernos, Excel o WhatsApp, nosotros lo pasamos a algo más fácil y ordenado.</p>
+        <p class="rv">Hablamos claro, te mostramos los avances y seguimos contigo después de la entrega.</p>
+      </div>
+      <figure class="frame rs">
+        <div class="pic"><img src="img/nosotros.png" alt="Fernando Almonte Reyes, CEO y fundador de FAR"></div>
+        <figcaption><b>Fernando Almonte Reyes</b>CEO y Fundador de FAR</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICIOS -->
+  <section class="pad" id="servicios">
+    <div class="wrap">
+      <span class="eyebrow rv">Servicios</span>
+      <h2 class="rv">¿En qué te podemos ayudar?</h2>
+      <div class="cards" id="cards" data-stagger></div>
+    </div>
+  </section>
+
+  <!-- EJEMPLOS -->
+  <section class="pad soft" id="ejemplos">
+    <div class="wrap">
+      <span class="eyebrow rv">Ejemplos</span>
+      <h2 class="rv">Así puede verse lo que hacemos.</h2>
+      <p class="lead rv">Son ejemplos ilustrativos de lo que podemos construir para tu negocio.</p>
+      <div class="show" data-stagger>
+  <div class="rv">
+    <article class="ex">
+      <div class="mk">
+        <div class="tr head"><span>Pedido</span><span>Estado</span></div>
+        <div class="tr"><span>#1042 · Camisetas x24</span><em>En producción</em></div>
+        <div class="tr"><span>#1041 · Tazas x12</span><em class="low">Listo</em></div>
+        <div class="tr"><span>#1040 · Gorras x6</span><em>Entregado</em></div>
+      </div>
+      <h3>Control de pedidos</h3>
+      <p>Ves cada pedido y en qué etapa está, sin preguntarle a nadie.</p>
+    </article>
+  </div>
+  <div class="rv">
+    <article class="ex">
+      <div class="mk">
+        <div class="wa">
+          <div class="wa-h"><span class="wa-dot"></span>Tu negocio</div>
+          <p class="wa-m">Hola María, recibimos tu pedido <b>#1042</b>.<small>9:02 am</small></p>
+          <p class="wa-m">Ya está en producción.<small>11:40 am</small></p>
+          <p class="wa-m">¡Listo! Ya puedes pasar a retirarlo.<small>3:15 pm</small></p>
+        </div>
+      </div>
+      <h3>Seguimiento por WhatsApp</h3>
+      <p>Tu cliente recibe un aviso automático cada vez que cambia el estado de su pedido.</p>
+    </article>
+  </div>
+  <div class="rv">
+    <article class="ex">
+      <div class="mk">
+        <div class="tr head"><span>Producto</span><span>Stock</span></div>
+        <div class="tr"><span>Camiseta blanca M</span><em>48</em></div>
+        <div class="tr"><span>Gorra negra</span><em>12</em></div>
+        <div class="tr"><span>Taza personalizada</span><em class="low">Bajo</em></div>
+        <div class="tr"><span>Bolsa de tela</span><em>30</em></div>
+      </div>
+      <h3>Control de inventario</h3>
+      <p>Sabes qué tienes, qué se está acabando y qué hay que pedir.</p>
+    </article>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="pad" id="proceso">
+    <div class="wrap">
+      <span class="eyebrow rv">Proceso</span>
+      <h2 class="rv">Así trabajamos, paso a paso.</h2>
+      <div class="proc" data-stagger>
+        <div class="rv"><div class="pstep"><span class="n">01</span><h3>Hablamos</h3><p>Nos cuentas tu idea y definimos juntos qué necesitas.</p></div></div>
+        <div class="rv"><div class="pstep"><span class="n">02</span><h3>Lo diseñamos</h3><p>Te mostramos cómo se va a ver antes de programar.</p></div></div>
+        <div class="rv"><div class="pstep"><span class="n">03</span><h3>Lo construimos</h3><p>Vas viendo los avances y opinando en el camino.</p></div></div>
+        <div class="rv"><div class="pstep"><span class="n">04</span><h3>Lo lanzamos</h3><p>Lo ponemos en marcha y seguimos contigo si nos necesitas.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS -->
+  <section class="pad soft" id="preguntas">
+    <div class="wrap faq">
+      <div>
+        <span class="eyebrow rv">Preguntas</span>
+        <h2 class="rv">Lo que suelen preguntarnos.</h2>
+        <p class="lead rv">Si no ves tu duda aquí, escríbenos y te la respondemos.</p>
+      </div>
+      <div class="qs" data-stagger>
+        <details class="q rr"><summary>¿Cuánto cuesta un proyecto?<span class="pm"></span></summary><p>Depende de lo que necesites. Primero conversamos, entendemos el alcance y luego te enviamos una propuesta clara con el precio, sin sorpresas.</p></details>
+        <details class="q rr"><summary>¿Cuánto se tarda?<span class="pm"></span></summary><p>Cada proyecto es distinto: una página sencilla no lleva lo mismo que un sistema completo. Cuando conocemos tu idea, te damos un tiempo estimado.</p></details>
+        <details class="q rr"><summary>¿Tengo que saber de tecnología?<span class="pm"></span></summary><p>Para nada. Tú nos cuentas cómo trabajas con tus propias palabras y nosotros nos encargamos de la parte técnica.</p></details>
+        <details class="q rr"><summary>¿Puedo pedir cambios mientras lo construyen?<span class="pm"></span></summary><p>Sí. Vas viendo los avances y nos dices qué ajustar antes de que todo quede terminado.</p></details>
+        <details class="q rr"><summary>¿Qué pasa después de la entrega?<span class="pm"></span></summary><p>No desaparecemos. Seguimos disponibles por si tienes dudas, necesitas ajustes o quieres agregar algo más.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="pad" id="contacto">
+    <div class="wrap">
+      <div class="ctabox rs">
+        <h2>¿Tienes una idea? Hablemos.</h2>
+        <p class="lead">Cuéntanos qué necesitas por WhatsApp y te respondemos con una propuesta clara, sin compromiso.</p>
+        <div class="actions">
+          <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn light">
+            <svg class="ico fill" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- SÍGUENOS -->
+  <section class="pad soft" id="siguenos">
+    <div class="wrap follow">
+      <span class="eyebrow rv">Instagram</span>
+      <h2 class="rv">Sé parte de nuestra historia.</h2>
+      <p class="lead rv">Cada proyecto que hacemos lo compartimos en Instagram. Síguenos para ver cómo trabajamos y apoyarnos a seguir creciendo.</p>
+      <div class="actions rv">
+        <a href="https://instagram.com/far_rep.dom" target="_blank" rel="noopener" class="btn">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>
+          Síguenos en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="js/footer.js"></script>
+
+<script src="js/index.js"></script>
+</body>
+</html>

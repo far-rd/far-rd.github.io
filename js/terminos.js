@@ -1,0 +1,64 @@
+(() => {
+  const hdr    = document.getElementById('hdr');
+  const layout = document.querySelector('.tc-layout');
+  const aside  = document.getElementById('tcAside');
+  const nav    = document.getElementById('tcNav');
+  const index  = document.getElementById('tcIndex');
+  const secs   = [...document.querySelectorAll('.tc-sec')];
+  const movil  = matchMedia('(max-width:900px)');
+  const TOP    = 96;   // distancia al borde superior (debajo del header)
+  const GAP    = 24;   // aire mínimo antes del final del layout
+
+  // Índice lateral generado desde los títulos de cada sección
+  secs.forEach(s => {
+    const li = document.createElement('li');
+    const a  = document.createElement('a');
+    a.href = '#' + s.id;
+    a.textContent = s.querySelector('h2').textContent;
+    li.appendChild(a);
+    index.appendChild(li);
+  });
+  const links = [...index.querySelectorAll('a')];
+
+  function marcar(id){
+    links.forEach(l => l.classList.toggle('on', l.getAttribute('href') === '#' + id));
+  }
+
+  // Sidebar: arranca alineado con su columna, se fija en TOP al hacer scroll
+  // y se detiene al final del layout para no tapar el footer
+  function tcPlace(){
+    if(movil.matches){
+      nav.style.left = nav.style.width = nav.style.top = '';
+      return;
+    }
+    const a = aside.getBoundingClientRect();
+    const l = layout.getBoundingClientRect();
+    let top = Math.max(TOP, a.top);
+    const tope = l.bottom - nav.offsetHeight - GAP;
+    if(top > tope) top = tope;
+    nav.style.left  = a.left + 'px';
+    nav.style.width = a.width + 'px';
+    nav.style.top   = top + 'px';
+  }
+
+  function tcScroll(){
+    hdr.classList.toggle('scrolled', scrollY > 8);
+    tcPlace();
+    // Al llegar al final de la página, activa la última sección
+    if(innerHeight + scrollY >= document.documentElement.scrollHeight - 4){
+      marcar(secs[secs.length - 1].id);
+    }
+  }
+  addEventListener('scroll', tcScroll, {passive:true});
+  addEventListener('resize', tcPlace);
+  addEventListener('load', tcPlace);
+  tcScroll();
+
+  // Resalta en el índice la sección que se está leyendo
+  const tcSpy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting) marcar(e.target.id);
+    });
+  }, {rootMargin:'-20% 0px -70% 0px'});
+  secs.forEach(s => tcSpy.observe(s));
+})();

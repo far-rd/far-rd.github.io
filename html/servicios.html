@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Servicios de FAR: páginas web, sistemas, aplicaciones, automatización por WhatsApp, integraciones y diseño UI/UX.">
+<meta name="theme-color" content="#ffffff">
+<title>Servicios \ Far</title>
+<link rel="icon" href="../img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">FAR</a>
+      <ul id="menu">
+        <li><a href="../index.html#empresa">Empresa</a></li>
+        <li class="dd">
+          <button type="button" aria-haspopup="true">Servicios <i class="caret"></i></button>
+          <div class="panel"><div class="box" id="navServicios"></div></div>
+        </li>
+        <li><a href="../index.html#proceso">Proceso</a></li>
+        <li>
+          <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn sm nav-wa">
+            <svg class="ico fill" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú"><i></i><i></i><i></i></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero sv-hero" id="inicio">
+    <div class="grid-bg" id="gridbg"></div>
+    <div class="wrap">
+      <div class="hero-in">
+        <div>
+          <span class="eyebrow rv">Servicios</span>
+          <h1 class="rv" style="--d:.05s">Todo lo que podemos construir para tu negocio.</h1>
+          <p class="lead rv" style="--d:.1s">Páginas web, sistemas, aplicaciones y automatización. Mira lo que hacemos y, si no ves lo que necesitas, cuéntanos: lo revisamos contigo.</p>
+          <div class="actions rv" style="--d:.15s">
+            <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn">Hablemos por WhatsApp</a>
+            <a href="#pedir" class="btn line">No veo lo que busco</a>
+          </div>
+        </div>
+
+        <div class="stage rs" style="--d:.2s">
+          <div class="win">
+            <div class="bar"><i></i><i></i><i></i><span>tunegocio.com/servicios</span></div>
+            <div class="sv-list" id="svList"></div>
+          </div>
+          <div class="chip c1"><span class="dot"></span><span>¿Tienes una idea?<small>Cuéntanosla por WhatsApp</small></span></div>
+          <div class="chip c2"><span class="dot"></span><span>Propuesta clara<small>Sin compromiso</small></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARRA DE SERVICIOS (se fija al bajar) -->
+  <div class="sv-nav" id="catalogo">
+    <div class="sv-nav-in" id="svNavIn">
+      <div class="wrap">
+        <div class="sv-chips" id="svChips"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICIOS (se generan desde servicios.js) -->
+  <div id="svRows"></div>
+
+  <!-- NO VEO LO QUE BUSCO -->
+  <section class="pad" id="pedir">
+    <div class="wrap sv-ask">
+      <div>
+        <span class="eyebrow rv">¿No ves lo que buscas?</span>
+        <h2 class="rv">Cuéntanos lo que imaginas y lo hacemos realidad.</h2>
+        <p class="lead rv">Si lo que necesitas no está en la lista, no pasa nada. Lo revisamos contigo y te decimos con honestidad si es posible y cómo lo haríamos.</p>
+        <ol class="sv-steps rv">
+          <li><div><b>Nos escribes</b>Cuéntanos tu idea con tus propias palabras.</div></li>
+          <li><div><b>La revisamos</b>Te decimos si se puede hacer y qué haría falta.</div></li>
+          <li><div><b>Te enviamos una propuesta</b>Clara y sin compromiso.</div></li>
+        </ol>
+      </div>
+
+      <div class="sv-box rs">
+        <label for="svIdea">¿Qué necesitas?</label>
+        <textarea class="sv-ta" id="svIdea" rows="5" placeholder="Ej: quiero un sistema para llevar los pedidos de mi negocio y avisarle a los clientes cuando estén listos."></textarea>
+        <div class="sv-ideas" aria-label="Ideas rápidas">
+          <button type="button" data-idea="Quiero un sistema para mi negocio.">Un sistema para mi negocio</button>
+          <button type="button" data-idea="Quiero una app para mis clientes.">Una app para mis clientes</button>
+          <button type="button" data-idea="Quiero conectar dos herramientas que ya uso.">Conectar herramientas</button>
+          <button type="button" data-idea="Tengo una idea pero no sé por dónde empezar.">No sé por dónde empezar</button>
+        </div>
+        <button type="button" class="btn" id="svSend">Enviar por WhatsApp</button>
+        <p class="sv-hint" id="svHint">Se abre WhatsApp con tu mensaje listo para enviar.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="../js/footer.js"></script>
+
+<script src="../js/servicios.js"></script>
+</body>
+</html>

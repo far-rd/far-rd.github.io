@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Política y preferencias de cookies de FAR.">
+<meta name="theme-color" content="#ffffff">
+<title>Cookies \ Far</title>
+<link rel="icon" href="../img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+<header id="hdr" class="simple">
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">FAR</a>
+      <ul id="menu">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="https://wa.me/18096937289?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" class="btn sm nav-wa">
+            <svg class="ico fill" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.78h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41z"/></svg>
+            WhatsApp
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="pad">
+    <div class="wrap legal">
+      <span class="eyebrow">Legal</span>
+      <h1>Cookies</h1>
+      <p class="lead">Aquí te explicamos qué cookies usa esta página y tú decides cuáles permitir.</p>
+      <p class="upd">Última actualización: octubre de 2026</p>
+
+      <h2>¿Qué son las cookies?</h2>
+      <p>Son pequeños archivos o identificadores que una página guarda en tu dispositivo cuando la visitas. Sirven para que la página funcione, recuerde tus decisiones y, en algunos casos, nos ayuden a entender cuánta gente nos visita. Parte de esa información puede compartirse con terceros, como Google, para esos fines.</p>
+
+      <h2 id="preferencias">Preferencias de cookies</h2>
+      <p>Usa estas opciones para gestionar tus preferencias. Puedes cambiarlas en cualquier momento.</p>
+
+      <div class="prefs">
+        <div class="pref">
+          <div>
+            <b>Necesarias</b>
+            <p>Son necesarias para que el sitio funcione y no se pueden desactivar. Aquí guardamos, por ejemplo, tu elección sobre las cookies.</p>
+          </div>
+          <label class="sw lock"><input type="checkbox" checked disabled aria-label="Cookies necesarias"><span></span></label>
+        </div>
+        <div class="pref">
+          <div>
+            <b>Analítica</b>
+            <p>Nos ayudan a entender cómo los visitantes usan el sitio. Con ellas medimos cuántas personas entran a la web y qué secciones ven, para mejorarla.</p>
+          </div>
+          <label class="sw"><input type="checkbox" id="c-analytics" aria-label="Cookies de analítica"><span></span></label>
+        </div>
+        <div class="pref">
+          <div>
+            <b>Marketing</b>
+            <p>Nos permitirían medir la eficacia de nuestras campañas y anuncios en plataformas de terceros, como Instagram.</p>
+          </div>
+          <label class="sw"><input type="checkbox" id="c-marketing" aria-label="Cookies de marketing"><span></span></label>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn" id="c-save">Guardar preferencias</button>
+        <button type="button" class="btn line" id="c-all">Aceptar todas</button>
+        <button type="button" class="btn line" id="c-none">Rechazar opcionales</button>
+      </div>
+      <p class="saved" id="c-msg" role="status"></p>
+
+      <h2>Servicios de terceros</h2>
+      <p>Esta página usa o enlaza a servicios externos que tienen sus propias políticas:</p>
+      <ul>
+        <li><b>Google Fonts:</b> para mostrar las tipografías. Google puede recibir tu dirección IP al cargarlas.</li>
+        <li><b>Google Analytics:</b> solo si aceptas las cookies de analítica. Nos da el conteo de visitas.</li>
+        <li><b>WhatsApp:</b> al tocar el botón de contacto sales de nuestra página y pasas a WhatsApp.</li>
+        <li><b>Instagram:</b> igual que WhatsApp, el enlace te lleva a su plataforma.</li>
+      </ul>
+
+      <h2>¿Cómo borrar las cookies desde tu navegador?</h2>
+      <div class="qs">
+        <details class="q"><summary>Google Chrome<span class="pm"></span></summary><p>Configuración → Privacidad y seguridad → Cookies y otros datos de sitios.</p></details>
+        <details class="q"><summary>Safari<span class="pm"></span></summary><p>Ajustes (o Preferencias) → Privacidad → Gestionar datos de sitios web.</p></details>
+        <details class="q"><summary>Firefox<span class="pm"></span></summary><p>Configuración → Privacidad y seguridad → Cookies y datos del sitio.</p></details>
+        <details class="q"><summary>Microsoft Edge<span class="pm"></span></summary><p>Configuración → Cookies y permisos del sitio → Administrar y eliminar cookies.</p></details>
+      </div>
+
+      <h2>Cambios en esta política</h2>
+      <p>Podemos actualizar esta página cuando cambie algo en la web. Siempre verás arriba la fecha de la última actualización.</p>
+
+      <h2>¿Dudas?</h2>
+      <p>Escríbenos y con gusto te respondemos.</p>
+      <div class="actions">
+        <a href="https://wa.me/18096937289?text=Hola%2C%20tengo%20una%20duda%20sobre%20las%20cookies." target="_blank" rel="noopener" class="btn">Escríbenos por WhatsApp</a>
+        <a href="index.html" class="btn line">Volver al inicio</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer"></div>
+
+<script src="../js/footer.js"></script>
+
+<script src="../js/cookies.js"></script>
+<script>
+  addEventListener('scroll', () => document.getElementById('hdr').classList.toggle('scrolled', scrollY > 8), {passive:true});
+
+  const a = document.getElementById('c-analytics'),
+        m = document.getElementById('c-marketing'),
+        msg = document.getElementById('c-msg');
+  const cur = farCookies.get() || {};
+  a.checked = !!cur.analytics;
+  m.checked = !!cur.marketing;
+
+  function guardar(an, mk){
+    a.checked = an; m.checked = mk;
+    farCookies.save({analytics: an, marketing: mk});
+    msg.textContent = 'Listo, guardamos tus preferencias.';
+  }
+  document.getElementById('c-save').onclick = () => guardar(a.checked, m.checked);
+  document.getElementById('c-all').onclick  = () => guardar(true, true);
+  document.getElementById('c-none').onclick = () => guardar(false, false);
+</script>
+</body>
+</html>
